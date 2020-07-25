@@ -17,7 +17,7 @@ services:
 
   gobarber-postgres:
     container_name: gobarber-postgres
-    image: postgres:11
+    build: './db'
     volumes:
       - gobarber-postgres-data:/data
     environment:
